@@ -13,8 +13,8 @@ public class CalcNbImpairsMultp {
             return;
         }
 
-        for (long N = 5; N <= 50; N=N+5){
-        
+        for (long N = 5; N <= 30; N = N + 5) {
+
             long startTime = System.nanoTime(); // Début de mesure du temps
 
             CalcNbImpairs(N);
@@ -28,7 +28,6 @@ public class CalcNbImpairsMultp {
 
             System.out.println("Le nombre d'appels récursif pour " + N + " est " + K);
             System.out.println("Temps d'exécution pour N = " + N + " : " + duration + " millisecondes.\n\n");
-            // System.out.println(N);
         }
 
     }
