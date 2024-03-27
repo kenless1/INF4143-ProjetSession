@@ -1,0 +1,24 @@
+Valeur de N:5 valeur de:5
+Temps d'exécution pour N = 5 : 0.0056 ms
+Nombre d'execution: 7
+
+Valeur de N:10 valeur de:105
+Temps d'exécution pour N = 10 : 0.0078 ms
+Nombre d'execution: 164
+
+Valeur de N:15 valeur de:2209
+Temps d'exécution pour N = 15 : 0.1316 ms
+Nombre d'execution: 3477
+
+Valeur de N:20 valeur de:46499
+Temps d'exécution pour N = 20 : 0.2089 ms
+Nombre d'execution: 73225
+
+Valeur de N:25 valeur de:978793
+Temps d'exécution pour N = 25 : 2.3802 ms
+Nombre d'execution: 1541414
+
+Valeur de N:30 valeur de:20603361
+Temps d'exécution pour N = 30 : 36.0684 ms
+Nombre d'execution: 32446455
+
