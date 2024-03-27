@@ -1,0 +1,46 @@
+Performances avec la récursivité multiple :
+
+Pour N = 5, CalcNbImpairsMultp(5) : 5
+Le nombre d'appels récursif : 7
+Temps d'exécution : 9.893208 millisecondes.
+
+
+Pour N = 10, CalcNbImpairsMultp(10) : 105
+Le nombre d'appels récursif : 164
+Temps d'exécution : 0.032917 millisecondes.
+
+
+Pour N = 15, CalcNbImpairsMultp(15) : 2209
+Le nombre d'appels récursif : 3477
+Temps d'exécution : 0.155334 millisecondes.
+
+
+Pour N = 20, CalcNbImpairsMultp(20) : 46499
+Le nombre d'appels récursif : 73225
+Temps d'exécution : 0.24495899999999998 millisecondes.
+
+
+Pour N = 25, CalcNbImpairsMultp(25) : 978793
+Le nombre d'appels récursif : 1541414
+Temps d'exécution : 2.8750419999999997 millisecondes.
+
+
+Pour N = 30, CalcNbImpairsMultp(30) : 20603361
+Le nombre d'appels récursif : 32446455
+Temps d'exécution : 54.402291 millisecondes.
+
+
+Pour N = 35, CalcNbImpairsMultp(35) : 433695873
+Le nombre d'appels récursif : 682990264
+Temps d'exécution : 1145.764166 millisecondes.
+
+
+Pour N = 40, CalcNbImpairsMultp(40) : 539260895
+Le nombre d'appels récursif : 14376783494
+Temps d'exécution : 24180.425208999997 millisecondes.
+
+
+Pour N = 45, CalcNbImpairsMultp(45) : -1106123859
+Le nombre d'appels récursif : 302627890185
+Temps d'exécution : 510062.399917 millisecondes.
+
