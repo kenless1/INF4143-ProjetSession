@@ -1,50 +1,58 @@
-import java.io.*;
+/**
+ * Implémentation de l'interface {@code Calculateur} utilisant une méthode multiplicative
+ * pour calculer le nombre d'impairs dans une séquence donnée. Cette implémentation compte
+ * également le nombre d'appels récursifs effectués pour obtenir le résultat.
+ */
+public class CalcNbImpairsMultp implements Calculateur {
 
-public class CalcNbImpairsMultp {
+    /**
+     * Compteur statique pour enregistrer le nombre d'appels récursifs à la méthode {@code CalcNbImpairs}.
+     */
+    private static long K = 0;
 
-    private static long K = 0; // compteur nombre d'appels
+    /**
+     * Récupère le nombre total d'appels récursifs effectués par cette instance.
+     *
+     * @return Le nombre total d'appels à la méthode.
+     */
+    public long getCompteur() { return K; }
 
-    public static void main(String[] args) {
-        try {
-            PrintStream fileOut = new PrintStream("./out.txt");
-            System.setOut(fileOut); // Redirige System.out vers le fichier out.txt
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-            return;
-        }
-
-        for (long N = 5; N <= 30; N = N + 5) {
-
-            long startTime = System.nanoTime(); // Début de mesure du temps
-
-            CalcNbImpairs(N);
-
-            long endTime = System.nanoTime(); // Fin de mesure du temps
-            double duration = (endTime - startTime) * 0.000001; // Calcul de la durée d'exécution en ms
-
-            System.out.print("Pour N = " + N + ", la Sequence est : ");
-            afficherSequence(N);
-            System.out.print("\n");
-
-            System.out.println("Le nombre d'appels récursif pour " + N + " est " + K);
-            System.out.println("Temps d'exécution pour N = " + N + " : " + duration + " millisecondes.\n\n");
-        }
-
-    }
-
+    /**
+     * Calcul récursif du nombre d'impairs dans une séquence jusqu'à N. Cette méthode
+     * incrémente le compteur d'appels à chaque appel récursif.
+     *
+     * @param N Le nombre jusqu'auquel calculer les impairs.
+     * @return Le nombre total d'impairs dans la séquence jusqu'à N.
+     */
     public static int CalcNbImpairs(long N) {
-        K++;
-        if (N<=3){
-            return 1;
-        }else {
+        K++; 
+        if (N <= 3) {
+            return 1; 
+        } else {
             return (CalcNbImpairs(N - 1) + CalcNbImpairs(N - 2) + CalcNbImpairs(N - 3));
         }
     }
 
-    public static void afficherSequence(long N) {
-        K = 0;
-        for (long i = 1; i <= N; i++) {
-            System.out.print(CalcNbImpairs(i) + "  ");
-        }
+    /**
+     * Implémente la méthode {@code calculer} de l'interface {@code Calculateur}.
+     * Lance le calcul du nombre d'impairs jusqu'à N en utilisant la méthode récursive {@code CalcNbImpairs}.
+     *
+     * @param N Le nombre jusqu'auquel calculer les impairs.
+     * @return Le nombre d'impairs calculés.
+     */
+    @Override
+    public long calculer(long N) {
+        return CalcNbImpairs(N);
+    }
+
+    /**
+     * Implémente la méthode {@code obtenirCompteur} de l'interface {@code Calculateur}.
+     * Renvoie le nombre total d'appels récursifs effectués par {@code CalcNbImpairs}.
+     *
+     * @return Le nombre total d'appels récursifs.
+     */
+    @Override
+    public long obtenirCompteur() {
+        return getCompteur();
     }
 }
