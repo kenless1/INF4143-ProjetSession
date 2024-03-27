@@ -34,13 +34,9 @@ public class CalcNbImpairsMultp {
 
     public static int CalcNbImpairs(long N) {
         K++;
-        if (N == 1) {
+        if (N<=3){
             return 1;
-        } else if (N == 2) {
-            return 1;
-        } else if (N == 3) {
-            return 1;
-        } else {
+        }else {
             return (CalcNbImpairs(N - 1) + CalcNbImpairs(N - 2) + CalcNbImpairs(N - 3));
         }
     }
