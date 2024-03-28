@@ -1,4 +1,4 @@
-# INF4143-ProjetSession
+# INF4143-Algorithmique
 
 Dans ce projet de programmation, nous concevons un algorithme (en pseudocode) et son implémentation (en Java) de deux versions récursives d'un calculateur CalcNbImpairs. L'objectif est de comparer expérimentalement leurs performances d'exécution. 
 
