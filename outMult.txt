@@ -1,24 +1,38 @@
 Valeur de N: 5 valeur de 5
-Temps d'ex�cution pour N = 5 : 0.006699999999999999 ms
+Temps d'exécution pour N = 5 : 0.006699999999999999 ms
 Nombre d'execution: 7
 
 Valeur de N: 10 valeur de 105
-Temps d'ex�cution pour N = 10 : 0.009 ms
+Temps d'exécution pour N = 10 : 0.009 ms
 Nombre d'execution: 164
 
 Valeur de N: 15 valeur de 2209
-Temps d'ex�cution pour N = 15 : 0.1517 ms
+Temps d'exécution pour N = 15 : 0.1517 ms
 Nombre d'execution: 3477
 
 Valeur de N: 20 valeur de 46499
-Temps d'ex�cution pour N = 20 : 0.30629999999999996 ms
+Temps d'exécution pour N = 20 : 0.30629999999999996 ms
 Nombre d'execution: 73225
 
 Valeur de N: 25 valeur de 978793
-Temps d'ex�cution pour N = 25 : 2.814 ms
+Temps d'exécution pour N = 25 : 2.814 ms
 Nombre d'execution: 1541414
 
 Valeur de N: 30 valeur de 20603361
-Temps d'ex�cution pour N = 30 : 42.1967 ms
+Temps d'exécution pour N = 30 : 42.1967 ms
 Nombre d'execution: 32446455
+
+Pour N = 35, CalcNbImpairsMultp(35) : 433695873
+Le nombre d'appels récursif : 682990264
+Temps d'exécution : 1145.764166 millisecondes.
+
+
+Pour N = 40, CalcNbImpairsMultp(40) : 539260895
+Le nombre d'appels récursif : 14376783494
+Temps d'exécution : 24180.425208999997 millisecondes.
+
+
+Pour N = 45, CalcNbImpairsMultp(45) : -1106123859
+Le nombre d'appels récursif : 302627890185
+Temps d'exécution : 510062.399917 millisecondes.
 
