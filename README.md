@@ -7,4 +7,10 @@ Les deux versions des calculs récursifs utilisent une stratégie linéaire et u
 Les nombres CalcNbImpairs sont inspirés des nombres de Fibonacci mais ils commencent par trois valeurs prédéterminées (1 1 1), chaque valeur étant ensuite la somme des trois valeurs précédentes. Les premiers nombres CalcNbImpairs sont:
 1, 1, 1, 3, 5, 9, 17, 31, 57, 105, 193, 355, 653, 1201, 2209, 4063, 7473, 13745, 25281, 46499, ...
 
-Pour chaque version implémentée, nous calculons CalcNbImpairs(5), CalcNbImpairs(10), etc., par incrément de 5 jusqu'à CalcNbImpairs(100). Nous utilisons la fonction de temps prédéfinie de Java, à cette fin. Les résultats sont consignés dans le fichier out.txt.
+Pour chaque version implémentée, nous calculons CalcNbImpairs(5), CalcNbImpairs(10), etc., par incrément de 5 jusqu'à CalcNbImpairs(30). Nous utilisons la fonction de temps prédéfinie de Java, à cette fin. Les résultats sont consignés dans le fichier out.txt.
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________
+<p><br></p>
+
+* Clonez le répertoire localement.
+* Exécutez le programme avec ` java CalculTempExecutionAlgorithme.java `
