@@ -17,6 +17,7 @@ public class CalculTempExecutionAlgorithme {
     public static void main(String[] args) {
         executerCalculEtEcrireResultat("outLinaire.txt", new CalcNbImpairsLineaire());
         executerCalculEtEcrireResultat("outMult.txt", new CalcNbImpairsMultp());
+        executerCalculEtEcrireResultat("outLinaireTerminal.txt", new CalcNbImpairsLineaireTerminal());
     }
 
     /**
